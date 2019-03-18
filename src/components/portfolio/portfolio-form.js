@@ -20,7 +20,7 @@ export default class PortfolioForm extends Component {
             banner_image: "",
             logo: "",
             editMode: false,
-            apiURL: "https://danielfloyd.devcamp.space/portfolio/portfolio_items",
+            apiUrl: "https://danielfloyd.devcamp.space/portfolio/portfolio_items",
             apiAction: 'post'
         };
 
@@ -77,7 +77,7 @@ export default class PortfolioForm extends Component {
                 position: position || "",
                 url: url || "",
                 editMode: true,
-                apiURL: `https://danielfloyd.devcamp.space/portfolio/portfolio_items/${id}`,
+                apiUrl: `https://danielfloyd.devcamp.space/portfolio/portfolio_items/${id}`,
                 apiAction: 'patch',
                 thumb_image_url: thumb_image_url || "",
                 banner_image_url: banner_image_url || "",
@@ -150,7 +150,7 @@ export default class PortfolioForm extends Component {
     handleSubmit(event) {
         axios({
             method: this.state.apiAction,
-            url: this.state.apiURL,
+            url: this.state.apiUrl,
             data: this.buildForm(),
             withCredentials: true
         })
@@ -171,7 +171,7 @@ export default class PortfolioForm extends Component {
                 banner_image: "",
                 logo: "",
                 editMode: false,
-                apiURL: "https://danielfloyd.devcamp.space/portfolio/portfolio_items",
+                apiUrl: "https://danielfloyd.devcamp.space/portfolio/portfolio_items",
                 apiAction: 'post'
             });
 
@@ -256,13 +256,15 @@ export default class PortfolioForm extends Component {
                                 <div className="dz-message">Thumbnail</div>
                             </DropzoneComponent>
                         )}
-
+                        
                         {this.state.banner_image_url && this.state.editMode ? (
                             <div className="portfolio-manager-image-wrapper">
                                 <img src={this.state.banner_image_url} />
                                 
                                 <div className="image-removal-link">
-                                    <a onClick={() => this.deleteImage("banner_image")}>Remove File</a>
+                                    <a onClick={() => this.deleteImage("banner_image")}>
+                                        Remove File
+                                    </a>
                                 </div>
                             </div>
                         ) : (
