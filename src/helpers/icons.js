@@ -1,4 +1,5 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from '@fortawesome/free-brands-svg-icons';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faTrash,
@@ -9,9 +10,9 @@ import {
     faPhone,
     faEnvelope,
     faMapMarkedAlt,
-    faLock
+    faLock,
+    faFileDownload,
   } from "@fortawesome/free-solid-svg-icons";
-
 
 const Icons = () => {
     return library.add(
@@ -23,7 +24,9 @@ const Icons = () => {
       faPhone,
       faEnvelope,
       faMapMarkedAlt,
-      faLock
+      faLock,
+      faFileDownload,
+      fab
     );
 };
 
