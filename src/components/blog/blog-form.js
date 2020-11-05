@@ -44,7 +44,14 @@ export default class BlogForm extends Component {
 
     componentWillMount() {
         if (this.props.editMode) {
+            // Deconstruction
+            // let { id, title, blog_status, content } = this.props.blog
             this.setState({
+                // Deconstruction
+                // id: id,
+                // title: title,
+                // blog_status: blog_status,
+                // content: content,
                 id: this.props.blog.id,
                 title: this.props.blog.title,
                 blog_status: this.props.blog.blog_status,
@@ -52,6 +59,7 @@ export default class BlogForm extends Component {
                 apiUrl: `https://danielfloyd.devcamp.space/portfolio/portfolio_blogs/${this.props.blog.id}`,
                 apiAction: "patch"
             });
+            console.log('it worked')
         }
     }
 
