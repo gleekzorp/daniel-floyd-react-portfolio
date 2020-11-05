@@ -42,7 +42,7 @@ export default class BlogForm extends Component {
         })
     }
 
-    componentWillMount() {
+    componentDidMount() {
         if (this.props.editMode) {
             // Deconstruction
             // let { id, title, blog_status, content } = this.props.blog
@@ -59,7 +59,6 @@ export default class BlogForm extends Component {
                 apiUrl: `https://danielfloyd.devcamp.space/portfolio/portfolio_blogs/${this.props.blog.id}`,
                 apiAction: "patch"
             });
-            console.log('it worked')
         }
     }
 

@@ -12,7 +12,7 @@ export default class PotfolioDetail extends Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.getPortfolioItem();
     }
 

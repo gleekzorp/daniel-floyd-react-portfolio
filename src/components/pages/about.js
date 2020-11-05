@@ -19,7 +19,7 @@ export default function() {
                         SUMMARY
                     </div>
                     <div className='about-text'>
-                        Experienced manager with a demonstrated history of working in the retail industry. Currently enrolled with Bottega Tech in the “Full Stack Web Development Program with Python and React/JS”. In my personal time, I enjoy playing video games coding or playing one of the many instruments in my music room.
+                    Passionate, responsible, and committed Developer, with a get-it-done, on-time spirit with experience designing, implementing and adapting technically sophisticated online web applications using Html, CSS, Javascript, React, Python, and more.  I love multiplayer video games, riding BMX, skateboarding, or hanging out with my family and friends.
                     </div>
                         <div className='about-header'>
                             SKILLS
